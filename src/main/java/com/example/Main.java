@@ -21,7 +21,7 @@ public class Main {
         ObjectMapper smileMapper = new ObjectMapper(smileFactory);
         byte[] jsonBytes = jsonMapper.writeValueAsBytes(user);
 
-        try (FileOutputStream out = new FileOutputStream("user.json")) {
+        try (FileOutputStream out = new FileOutputStream("userJson.dat")) {
             out.write(jsonBytes);
         }
 
